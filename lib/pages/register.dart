@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:theme/color.dart';
+import 'package:theme/pages/login.dart';
+import 'package:theme/pages/login.dart';
 
 class Register extends StatefulWidget {
   const Register({super.key});
@@ -96,7 +98,14 @@ class _RegisterState extends State<Register> {
                         child: const Text('Register'),
                       ),
                       ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => const Login(),
+                            ),
+                          );
+                        },
                         child: const Text('Login'),
                       )
                     ],
